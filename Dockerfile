@@ -32,8 +32,8 @@ RUN go get -u github.com/tomnomnom/assetfinder github.com/hakluke/hakrawler gith
 RUN rm -Rf /app/tools/ParamSpider
 RUN git clone https://github.com/devanshbatham/ParamSpider /app/tools/ParamSpider
 RUN GO111MODULE=on go get -u -v github.com/projectdiscovery/httpx/cmd/httpx \
-    github.com/projectdiscovery/naabu/cmd/naabu \
-    github.com/projectdiscovery/subfinder/cmd/subfinder \
+    github.com/projectdiscovery/naabu/v2/cmd/naabu \
+    github.com/projectdiscovery/subfinder/v2/cmd/subfinder \
     github.com/lc/gau \
     github.com/tomnomnom/gf
 RUN go get -u -v github.com/projectdiscovery/nuclei/cmd/nuclei
